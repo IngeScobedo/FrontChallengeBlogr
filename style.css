@@ -37,7 +37,7 @@ z-index: -1000;
 }
 
 
-/* ============= NAV BAR ============= */
+/* HEADER */
 
 /* ELEMENTO PADRE */
 #header {
@@ -50,6 +50,9 @@ z-index: -1000;
     z-index: -100;
 }
 /* FIN ELEMENTO PADRE */
+
+/* ============= NAV BAR ============= */
+
 
 
 /*PATRON DE CUADROS (BG) */
@@ -110,22 +113,8 @@ z-index: -1000;
 
 /* FIN NAV BAR (MOBILE)*/
 
-.nav__list{
-    width: 100%;
-    text-align: center;
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: var(--very-dark-black-blue-footer-background);
-}
-.nav__link{
-    text-decoration: none;
-    font-weight: bold;
+/* MENU */
 
-}
 @media screen and (max-width:768px){
     .nav{
         display: none;
@@ -149,29 +138,13 @@ a{
         top: 100px;
     }
 }
-
-.hide{
-animation: hideAnim 2s forwards;
-}
 .show{
-    animation: showAnim 2s forwards;
+    animation: showAnim 750ms forwards;
     display: block;
 }
-.rotate{
-    transition: all 1s;
-    transform: rotate(180deg);
-}
-
-
-
-hr{
-    width: 86%;
-}
-.nav__menu{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a{
+    text-decoration: none;
+    color: var(--very-dark-black-blue-footer-background);
 }
 .nav__content{
     width: 100%;
@@ -182,27 +155,19 @@ hr{
     background-color: white;
     text-align: center;
 }
-.nav__button{
-    font-family: 'Overpass';
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 30px;
-    border: none;
-    width: 130px;
-    height: 50px;
-    margin:10px;
-    background-color: transparent;
+.nav__menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.signUp{
-    background: linear-gradient(to right,var(--very-light-red), var(--light-red));
+.nav__list{
+    width: 100%;
+    text-align: center;
+    margin:0;
+    padding:0;
+    list-style: none;
 }
-
-/* ============= FIN NAV BAR ============= */
-
-
-
-
-
 .nav__item{
     text-align: center;
     width: 100%;
@@ -212,9 +177,18 @@ hr{
     font-family: 'Overpass';
     color: var(--very-dark-black-blue-footer-background);
 }
+.nav__link{
+    text-decoration: none;
+    font-weight: bold;
+}
 .nav__arrow{
     margin-left: 10px;
 }
+.rotate{
+    transition: all 1s;
+    transform: rotate(180deg);
+}
+/* MENU DESPLEGABLE DE LOS ELEMENTOS DEL NAVBAR MOBILE*/
 
 .dropdown__section{
     width: 100%;
@@ -242,9 +216,29 @@ hr{
 .dropdown__active{
     display: flex;
 }
+/* FIN MENU DESPLEGABLE DE LOS ELEMENTOS DEL NAVBAR MOBILE */
 
+hr{
+    width: 86%;
+}
+.nav__button{
+    font-family: 'Overpass';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    width: 130px;
+    height: 50px;
+    margin:10px;
+    background-color: transparent;
+}
+.signUp{
+    background: linear-gradient(to right,var(--very-light-red), var(--light-red));
+}
 
+/* ============= FIN NAV BAR ============= */
 
+/* HERO */
 
 .text-hero{
     position:relative;
@@ -262,7 +256,7 @@ hr{
     margin-top: -20px;
     font-size: 16px;
 }
-.buttons{
+.buttonsArea{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -287,3 +281,5 @@ hr{
     color: var(--light-red-cta-text);
     background-color: var(--white-text);
 }
+
+/* FIN HEADER */

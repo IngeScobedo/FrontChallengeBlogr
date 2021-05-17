@@ -12,13 +12,7 @@ const showMenu = (toggleId, navId) => {
     
     if (toggle && nav) {
         toggle.addEventListener("click", () => {
-        if (isNav(nav)) {
             nav.classList.toggle("show");
-            nav.classList.add('hide');
-        }else{
-            nav.classList.toggle("show");
-        }
-
     });
   }
 };
@@ -37,15 +31,10 @@ let is = (dropdown) => {
   return result;
 };
 
-console.log(is(products));
-console.log(is(company));
-console.log(is(connect));
-
 const showMore = (toggleId, navId, arrowId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId),
     arrow = document.getElementById(arrowId);
-  console.log(arrow);
 
   if (toggle && nav) {
     if (toggleId === "nav__products") {
