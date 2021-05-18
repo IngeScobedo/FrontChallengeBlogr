@@ -41,13 +41,14 @@ z-index: -1000;
 
 /* ELEMENTO PADRE */
 #header {
-    position: absolute;
+    z-index: -2;
     width: 375px;
     height: 600px;
     background: linear-gradient(to right,var(--very-light-red), var(--light-red));
     overflow:hidden;
     border-radius: 0px 0px 0px 70px;
     z-index: -100;
+    margin-bottom: 50px;
 }
 /* FIN ELEMENTO PADRE */
 
@@ -58,12 +59,11 @@ z-index: -1000;
 /*PATRON DE CUADROS (BG) */
 
 .pattern{
-    z-index: -1;
     padding: 0;
     width: 710px;
     height: 715px;
-    position: absolute;
-    top: 80px;
+    position: relative;
+    top: -340px;
     left: -20px;
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
@@ -92,6 +92,7 @@ z-index: -1000;
 /* NAV BAR (MOBILE)*/
 
 .header-navbar{
+    z-index: 10;
     position: relative;
     width: 100%;
     height: 100px;
@@ -241,6 +242,7 @@ hr{
 /* HERO */
 
 .text-hero{
+    z-index: 10;
     position:relative;
     top: 30px;
     width: 100%;
@@ -285,3 +287,10 @@ hr{
 /* FIN HERO */
 
 /* FIN HEADER */
+
+/* SECTION STYLES */
+
+
+
+/* FIN SECTION STYLES */
+ 
