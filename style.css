@@ -121,20 +121,7 @@ body {
 
 /* MENU */
 
-@media screen and (max-width: 1100px) {
-  .nav {
-    display: none;
-    position: fixed;
-    top: -500px;
-    left: 7%;
-    background-color: var(--white-text);
-    width: 86%;
-    border-radius: 10px;
-    z-index: 10;
-    transition: 2s;
-    overflow-y: auto;
-  }
-}
+
 
 @keyframes showAnim {
   0% {
@@ -537,5 +524,28 @@ hr {
   }
   .subsection {
     top:65%;
+  }
+}
+@media screen and (min-width: 835px) {
+  .pattern{
+    transition: all 1s ease;
+    left: 15%;
+  }
+  .subsection {
+    top:65%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav {
+    display: none;
+    position: fixed;
+    top: -500px;
+    left: 7%;
+    background-color: var(--white-text);
+    width: 86%;
+    border-radius: 10px;
+    z-index: 10;
+    transition: 2s;
+    overflow-y: auto;
   }
 }
