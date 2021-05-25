@@ -16,6 +16,8 @@ const showMenu = (toggleId, navId) => {
     });
   }
 };
+const PI = 3.1415;
+
 
 showMenu("header-toggle", "nav-menu");
 const products = document.getElementById("dropdown__section-products"),
